@@ -1,3 +1,4 @@
+# Shlomo Salhoov 206787228
 
 #question 1
 def getPentaNum(n):
