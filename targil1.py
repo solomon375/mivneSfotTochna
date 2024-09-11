@@ -90,13 +90,18 @@ def add3dicts(d1,d2,d3):
     return d
 
 #question 6
-l=[multiplyByTwo,powerOfTwo,oneDevided]
-def returnDictOfMath(lst,l):
+def multiplyByTwo(n):
+    return 2*n
+
+def powerOfTwo(n):
+    return pow(n,2)
+
+def oneDevided(n):
+    return 1/n
+
+funcs=[multiplyByTwo,powerOfTwo,oneDevided]
+def returnDictOfMath(nums,funcs):
     d=dict()
-    for n in lst:
-        d[multiplyByTwo]=[].append(n*2)
-    for n in lst:
-        d[powerOfTwo]=[].append(pow(n,2))
-    for n in lst:
-        d[oneDevided]=[].append(1/n)
+    for func in funcs:
+        d[func.__name__] = [func(n) for n in nums]
     return d
