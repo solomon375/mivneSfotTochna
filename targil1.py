@@ -1,9 +1,8 @@
 # Shlomo Salhoov 206787228
 
+import math
 #question 1
 def getPentaNum(n):
-    if n is not int or n<1: 
-        return "ERROR"
     return (n*(3*n-1))/2
 
 def pentaNumRange(n1,n2):
@@ -11,8 +10,6 @@ def pentaNumRange(n1,n2):
 
 #question 2
 def sumDigit(n):
-    if n is not int: 
-        return "ERROR"
     l=list()
     while(n!=0):
         l.append(n%10)
@@ -54,7 +51,7 @@ def getGematria(str):
 def checkPrime(n1):
     if n1%2==0 :
         return False
-    for i in range(3,n1/2,2):
+    for i in range(3,math.sqrt(n1),2):
         if n1%i==0:
             return False
     return True
