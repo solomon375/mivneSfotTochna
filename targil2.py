@@ -28,11 +28,11 @@ print("time for the normal func is")
 print(end_time2-start_time2)
 print("seconds")
 # part 4
-print(reduce(lambda x,y:x+y, range(0,10000)))
+print(reduce(lambda x,y:x+func(y), range(0,10000)))
 
 ##### question 2 #####
-
-
+even=list(filter(lambda x:x%2==0,range(1,1000)))
+odd=list(filter(lambda x:x%2==1,range(1,1000)))
 ##### question 3 #####
 
 
