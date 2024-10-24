@@ -33,6 +33,8 @@ print(reduce(lambda x,y:x+func(y), range(0,10000),0))
 ##### question 2 #####
 even=list(filter(lambda x:x%2==0,range(1,1000)))
 odd=list(filter(lambda x:x%2==1,range(1,1000)))
+reduce(lambda x,y:x+y,list(reduce(lambda x,y:x*y,even,0)),0)
+reduce(lambda x,y:x+y,list(reduce(lambda x,y:func(x)+y,odd,0)),0)
 ##### question 3 #####
 
 
