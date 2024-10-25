@@ -31,12 +31,20 @@ print("seconds")
 print(reduce(lambda x,y:x+func(y), range(0,10000),0))
 
 ##### question 2 #####
-even=list(filter(lambda x:x%2==0,range(1,1000)))
-odd=list(filter(lambda x:x%2==1,range(1,1000)))
-reduce(lambda x,y:x+y,list(reduce(lambda x,y:x*y,even,0)),0)
-reduce(lambda x,y:x+y,list(reduce(lambda x,y:func(x)+y,odd,0)),0)
-##### question 3 #####
+#even=list(filter(lambda x:x%2==0,range(1,1000)))
+#odd=list(filter(lambda x:x%2==1,range(1,1000)))
+#reduce(lambda x,y:x+y,list(reduce(lambda x,y:x*y,even,0)),0)
+#reduce(lambda x,y:x+y,list(reduce(lambda x,y:func(x)+y,odd,0)),0)
 
+even = list(filter(lambda x: x % 2 == 0, range(1, 1000)))
+odd = list(filter(lambda x: x % 2 == 1, range(1, 1000)))
+sum_even = reduce(lambda x, y: x + y, even, 0)
+sum_odd = reduce(lambda x, y: x + func(y), odd, 0)
+print(sum_even, sum_odd)
+print(even)
+print(odd)
+##### question 3 #####
+#print(lambda str_date,repeat,skip:list(map(lambda x,str:str+x(skip) ,[str_date]*repeat)))
 
 ##### question 4 #####
 
