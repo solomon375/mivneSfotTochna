@@ -1,14 +1,14 @@
 # Shlomo Salhoov 206787228
 
 import math
-#question 1
+##### question 1 #####
 def getPentaNum(n):
     return (n*(3*n-1))/2
 
 def pentaNumRange(n1,n2):
     return [getPentaNum(n) for n in range(n1,n2)]
 
-#question 2
+##### question 2 #####
 def sumDigit(n):
     l=list()
     while(n!=0):
@@ -16,7 +16,7 @@ def sumDigit(n):
         n/=10
     return sum(l)
 
-#question 3
+##### question 3 #####
 gematria = {
     'א':1,
     'ב':2,
@@ -47,7 +47,7 @@ def getGematria(str):
         num+=gematria[s]
     return num
 
-#question 4
+##### question 4 #####
 def checkPrime(n1):
     if n1%2==0 :
         return False
@@ -69,7 +69,7 @@ def returnDict(n):
             d[num]=returnTwin(num)
     return d
 
-#question 5
+##### question 5 #####
 def add3dicts(d1,d2,d3):
     d=dict()
     for k1 in d1.keys:
@@ -86,7 +86,7 @@ def add3dicts(d1,d2,d3):
             d[k3]=d3[k3]
     return d
 
-#question 6
+##### question 6 #####
 def multiplyByTwo(n):
     return 2*n
 
