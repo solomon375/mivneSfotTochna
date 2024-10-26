@@ -42,13 +42,10 @@ print(lambda str_date,repeat,skip:list(map(lambda x,str:str+x(skip) ,[str_date]*
 
 ##### question 4 #####
 # part 1
-
-
+func2=lambda x:(lambda y:y**x,('X'))
 # part 2
-
-
+func3=lambda z:map(func2,range(0,z-1))
 # part 3
-
-
+lambda g,h:sum(list(func3))/(reduce((lambda q,v:q*v),range(1,g-1),0))
 ##### question 5 #####
 
