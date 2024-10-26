@@ -37,9 +37,17 @@ reduce(lambda x,y:x+y,list(reduce(lambda x,y:x*y,even,0)),0)
 reduce(lambda x,y:x+y,list(reduce(lambda x,y:func(x)+y,odd,0)),0)
 
 ##### question 3 #####
+# part 1
 print(lambda str_date,repeat,skip:list(map(lambda x,str:str+x(skip) ,[str_date]*repeat)))
 
 ##### question 4 #####
+# part 1
+
+
+# part 2
+
+
+# part 3
 
 
 ##### question 5 #####
